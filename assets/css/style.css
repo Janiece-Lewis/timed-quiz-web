@@ -1,4 +1,12 @@
-
-*{
+* {
     background-color: rgb(153, 148, 156);
+}
+
+.ques-answers-screen {
+    /* display: none; */
+}
+
+.hide {
+    display: none;
+
 }

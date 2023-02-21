@@ -12,28 +12,39 @@
 
 <body>
     <header>
+        <div class="card timer">
+            <div class="timer-text">
+                <div class="large-font timer-count">30</div>
+                <h3>seconds remaining</h3>
+            </div>
+        </div>
+
         <!-- start screen -->
-        <div class="container">
-            <div class="card" style="width: 18rem;" img
-                src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" class="card-img-top"
-                alt="JavaSript logo">
-                <div class="card-body">
-                    <p class="card-text">Try our quiz on JavaScript!</p>
-                    <a href="#" class="btn btn-primary">Start Quiz</a>
+        <div id="start"class="container">
+            <div class="row justify-content-center mt-4">
+                <div class="card col-md-6 col-sm-12">
+                    <div class="card-body">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                            class="card-img-top" alt="JavaSript logo">
+                        <p class="card-text">Try our quiz on JavaScript!</p>
+                        <a  id="startbtn"class="btn btn-primary">Start Quiz</a>
+                    </div>
                 </div>
             </div>
-
         </div>
+
+
+
 
     </header>
     <!-- question answer screens -->
-    <div class="questions-answers-screen">
+    <div class="ques-answers-screen hide">
         <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
             <!-- question 1 -->
             <div class="card-header">Question 1
             </div>
             <div class="card-body">
-                <h5 class="card-title">JavaScript is used for_______.</h5>
+                <h5 class="card-title">JavaScript gives a page _______.</h5>
                 <button type="button" class="btn btn-info m-2">styling</button>
                 <br>
                 <button type="button" class="btn btn-info  m-2">structure</button>
@@ -42,71 +53,79 @@
                 <br>
                 <button type="button" class="btn btn-info  m-2">bananas</button>
             </div>
-            <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
-                <!-- question 2 -->
-                <div class="card-header">Question 2</div>
-                <div class="card-body">
-                    <h5 class="card-title">JavaScript was originally called _______.</h5>
-                    <button type="button" class="btn btn-info m-2">iscript</button>
-                    <br>
-                    <button type="button" class="btn btn-info  m-2">LiveScript</button>
-                    <br>
-                    <button type="button" class="btn btn-info  m-2">MyScript</button>
-                    <br>
-                    <button type="button" class="btn btn-info  m-2">CryScript</button>
-                </div>
-                <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
-                    <!-- question 3 -->
-                    <div class="card-header">Question 3</div>
-                    <div class="card-body">
-                        <h5 class="card-title">JavaScript is added to the HTML file in a_______tag.</h5>
-                        <button type="button" class="btn btn-info m-2">script</button>
-                        <br>
-                        <button type="button" class="btn btn-info  m-2">style</button>
-                        <br>
-                        <button type="button" class="btn btn-info  m-2">img</button>
-                        <br>
-                        <button type="button" class="btn btn-info  m-2">link</button>
-                    </div>
-                    <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
-                        <!-- question 4 -->
-                        <div class="card-header">Question 4</div>
-                        <div class="card-body">
-                            <h5 class="card-title">JavaScript is used for_______.</h5>
-                            <button type="button" class="btn btn-info m-2">apps</button>
-                            <br>
-                            <button type="button" class="btn btn-info  m-2">game development</button>
-                            <br>
-                            <button type="button" class="btn btn-info  m-2">servers</button>
-                            <br>
-                            <button type="button" class="btn btn-info  m-2">all of the above</button>
-                        </div>
-                        <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
-                            <!-- question 5 -->
-                            <div class="card-header">Question 5</div>
-                            <div class="card-body">
-                                <h5 class="card-title">JavaScript is compatible with_______.</h5>
-                                <button type="button" class="btn btn-info m-2">wine</button>
-                                <br>
-                                <button type="button" class="btn btn-info  m-2">pizza</button>
-                                <br>
-                                <button type="button" class="btn btn-info  m-2">other languages</button>
-                                <br>
-                                <button type="button" class="btn btn-info  m-2">bananas</button>
-                            </div>
-                            <!-- quiz timer -->
-                            <div class="card timer">
-                                <div class="timer-text">
-                                    <div class="large-font timer-count">10</div>
-                                    <h3>seconds remaining</h3>
-                                </div>
-                            </div>
+        </div>
+        <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+            <!-- question 2 -->
+            <div class="card-header">Question 2</div>
+            <div class="card-body">
+                <h5 class="card-title">JavaScript was originally called _______.</h5>
+                <button type="button" class="btn btn-info m-2">iscript</button>
+                <br>
+                <button type="button" class="btn btn-info  m-2">LiveScript</button>
+                <br>
+                <button type="button" class="btn btn-info  m-2">MyScript</button>
+                <br>
+                <button type="button" class="btn btn-info  m-2">CryScript</button>
+            </div>
+        </div>
+        <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+            <!-- question 3 -->
+            <div class="card-header">Question 3</div>
+            <div class="card-body">
+                <h5 class="card-title">JavaScript is added to the HTML file in a_______tag.</h5>
+                <button type="button" class="btn btn-info m-2">script</button>
+                <br>
+                <button type="button" class="btn btn-info  m-2">style</button>
+                <br>
+                <button type="button" class="btn btn-info  m-2">img</button>
+                <br>
+                <button type="button" class="btn btn-info  m-2">link</button>
+            </div>
+        </div>
+        <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+            <!-- question 4 -->
+            <div class="card-header">Question 4</div>
+            <div class="card-body">
+                <h5 class="card-title">JavaScript is used for_______.</h5>
+                <button type="button" class="btn btn-info m-2">apps</button>
+                <br>
+                <button type="button" class="btn btn-info  m-2">game development</button>
+                <br>
+                <button type="button" class="btn btn-info  m-2">servers</button>
+                <br>
+                <button type="button" class="btn btn-info  m-2">all of the above</button>
+            </div>
+        </div>
+        <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+            <!-- question 5 -->
+            <div class="card-header">Question 5</div>
+            <div class="card-body">
+                <h5 class="card-title">JavaScript is compatible with_______.</h5>
+                <button type="button" class="btn btn-info m-2">wine</button>
+                <br>
+                <button type="button" class="btn btn-info  m-2">pizza</button>
+                <br>
+                <button type="button" class="btn btn-info  m-2">other languages</button>
+                <br>
+                <button type="button" class="btn btn-info  m-2">bananas</button>
+            </div>
+        </div>
+        <!-- timer -->
+        <div class="card timer">
+            <div class="timer-text">
+                <div class="large-font timer-count">30</div>
+                <h3>seconds remaining</h3>
+            </div>
+        </div>
+
+        <!-- results -->
+        <div class="final-score"> </div>
 
 
 
-                        </div>
-                    </div>
-<script src="assets/js/script.js"></script>
+    </div>
+
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
