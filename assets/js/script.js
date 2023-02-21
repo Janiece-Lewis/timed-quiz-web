@@ -57,7 +57,6 @@ function startQuiz() {
 document.querySelector("#start").classList.add("hide")
 startQuizEl.classList.remove("hide")
 startTimer()
-// div.classList.remove("foo");
 }
 
 startButton.addEventListener("click", startQuiz);
