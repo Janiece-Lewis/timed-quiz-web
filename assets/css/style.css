@@ -1,5 +1,6 @@
 * {
     background-color: rgb(153, 148, 156);
+    font-size: 20px;
 }
 
 .ques-answers-screen {
@@ -9,4 +10,8 @@
 .hide {
     display: none;
 
+}
+
+.timer-text{
+    font-size: 30px;
 }
