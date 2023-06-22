@@ -1,17 +1,50 @@
 * {
-    background-color: rgb(153, 148, 156);
+    background-color: rgb(12, 10, 10);
     font-size: 20px;
 }
 
-.ques-answers-screen {
-    /* display: none; */
-}
 
+#startbtn{
+    display: flex;
+    justify-content: center;
+}
 .hide {
     display: none;
 
+
 }
 
-.timer-text{
+
+#begin{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    color: rgb(107, 13, 184);
+    font-size: 50px;
+    font-weight: 600;
+}
+
+
+
+.timer-text,.timer-count,h3{
+    font-size: 40px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: rgb(196, 196, 33);
+}
+
+.final-score{
+    background-color: rgb(10, 10, 10);
+    color: rgb(140, 17, 228);
+    text-align: center;
+    font-weight:bolder;
+    padding: 200px;
+   
+}
+
+#question,button,.card-text{
+    color: antiquewhite;
     font-size: 30px;
+    margin: 5px;
+    
 }
