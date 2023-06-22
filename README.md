@@ -2,18 +2,7 @@
 
 ## My Task
 
-This week's Challenge was to make a quiz based on the funadamentals of JavaScript
-
-## Table of contents
-
-- [User Story](#userstory)
-- [Acceptance Criteria](#AcceptanceCriteria)
-- [Preview](#preview)
-- [Contributing](#contributing)
-- [License](#license)
-
-
-
+This week's Challenge was to make a quiz based on the fundamentals of JavaScript
 
 
 ## User Story

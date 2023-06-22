@@ -125,7 +125,7 @@ function checkAnswers(event) {
     }
 
 }
-document.querySelector('.save').addEventListener('click', function () {
+document.querySelector('.save').addEventListener('click', function() {
     const userData = {
         initials: document.querySelector('#initials').value,
         score: timerCount
@@ -135,7 +135,7 @@ document.querySelector('.save').addEventListener('click', function () {
     playerHistory.push(userData)
     localStorage.setItem('leaderBoard', JSON.stringify(playerHistory))
     // loop through playerhistory and add players to html 
-    initials.textContent?+
+    initials.textContent= ''
 
 })
 // function to end game
