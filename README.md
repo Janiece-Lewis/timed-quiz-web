@@ -37,7 +37,7 @@ THEN the password is either displayed in an alert or written to the page
 
 ## Preview
 ![preview image](./assets/images/timed-quiz%20screenshot%20(2).png)
-[Deployed Link]()
+[Deployed Link](https://janiece-lewis.github.io/timed-quiz-web/)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open and issue first to discuss what you would like to change.
