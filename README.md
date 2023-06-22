@@ -36,7 +36,7 @@ THEN the password is either displayed in an alert or written to the page
 
 
 ## Preview
-![preview image](./assets/images/screencapture-janiece-lewis-github-io-timed-quiz-2023-02-21-23_22_55.png)
+![preview image](./assets/images/timed-quiz%20screenshot%20(2).png)
 [Deployed Link]()
 
 ## Contributing
